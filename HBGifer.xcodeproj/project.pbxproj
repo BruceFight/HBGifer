@@ -22,6 +22,7 @@
 		2A3E31001FC4023000DFB202 /* sleep_noask@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E30EE1FC3D88B00DFB202 /* sleep_noask@3x.gif */; };
 		2A849FFB1FC55FD900086CBB /* HBImageManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A849FFA1FC55FD900086CBB /* HBImageManger.swift */; };
 		2A849FFD1FC5745C00086CBB /* HBAllFramesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A849FFC1FC5745C00086CBB /* HBAllFramesController.swift */; };
+		2AD7BA1B1FCD7F3700509F31 /* t.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD7BA1A1FCD7F3700509F31 /* t.m */; };
 		2DF1B8A32F9059452237495A /* Pods_HBGifer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7248F46669438C906F2553 /* Pods_HBGifer.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		2A3E30EE1FC3D88B00DFB202 /* sleep_noask@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "sleep_noask@3x.gif"; sourceTree = "<group>"; };
 		2A849FFA1FC55FD900086CBB /* HBImageManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBImageManger.swift; sourceTree = "<group>"; };
 		2A849FFC1FC5745C00086CBB /* HBAllFramesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBAllFramesController.swift; sourceTree = "<group>"; };
+		2AD7BA191FCD7F3700509F31 /* t.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = t.h; sourceTree = "<group>"; };
+		2AD7BA1A1FCD7F3700509F31 /* t.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = t.m; sourceTree = "<group>"; };
 		3E7248F46669438C906F2553 /* Pods_HBGifer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBGifer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8539C8BDAAAFD08FD4E5D4C2 /* Pods-HBGifer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBGifer.release.xcconfig"; path = "Pods/Target Support Files/Pods-HBGifer/Pods-HBGifer.release.xcconfig"; sourceTree = "<group>"; };
 		DAD237FFED5DDB68A8173338 /* Pods-HBGifer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBGifer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBGifer/Pods-HBGifer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				2A3E30DB1FC3D73600DFB202 /* HBGifer-Bridging-Header.h */,
 				2A3E30E11FC3D88B00DFB202 /* gif */,
 				2A08C5CF1FC674C7005138BA /* HBImage.swift */,
+				2AD7BA191FCD7F3700509F31 /* t.h */,
+				2AD7BA1A1FCD7F3700509F31 /* t.m */,
 			);
 			path = HBGifer;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD7BA1B1FCD7F3700509F31 /* t.m in Sources */,
 				2A849FFB1FC55FD900086CBB /* HBImageManger.swift in Sources */,
 				2A08C5D01FC674C7005138BA /* HBImage.swift in Sources */,
 				2A3E30AE1FC3D38A00DFB202 /* ViewController.swift in Sources */,

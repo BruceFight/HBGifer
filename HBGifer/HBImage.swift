@@ -8,6 +8,20 @@
 
 import UIKit
 
+enum HBImageType : Int {
+    case unknow = 0
+    case JPEG
+    case JPEG2000
+    case TIFF
+    case BMP
+    case ICO
+    case ICNS
+    case GIF
+    case PNG
+    case WebP
+    case Other
+}
+
 class HBImage: NSObject {
     
     public var imageData : Data?
@@ -19,15 +33,29 @@ class HBImage: NSObject {
     }
     
     
-    func getSourceType(data:CFData) -> () {
+    func getSourceType(data:CFData) -> HBImageType {
         let bytes = CFDataGetBytePtr(data)
-        /*
-        switch bytes {
-        case <#pattern#>:
-            <#code#>
-        default:
-            <#code#>
-        }*/
+        if let b = bytes as? UInt8 {
+            
+        }
+            /*
+            switch bytes {
+            case getBytes_four(a: 0x4D, b: 0x4D, c: 0x00, d: 0x2A):// big endian TIFF
+                return .TIFF
+            case getBytes_four(a: 0x49, b: 0x49, c: 0x2A, d: 0x00):// little endian TIFF
+                return .TIFF
+            case getBytes_four(a: 0x00, b: 0x00, c: 0x01, d: 0x00):
+                return .ICO
+            case getBytes_four(a: 0x00, b: 0x00, c: 0x02, d: 0x00):// CUR
+                return .ICO
+            case getBytes_four(a: UInt32.init(Unicode.Scalar.init("i")), b: UInt32.init(Unicode.Scalar.init("c")), c: UInt32.init(Unicode.Scalar.init("n")), d: UInt32.init(Unicode.Scalar.init("s"))):
+                return .ICNS
+            case getBytes_four(a: 0x4D, b: 0x4D, c: 0x00, d: 0x2A):
+                return .TIFF
+            default:break
+            }
+             */
+        return .unknow
     }
     
     func getBytes_four(a:UInt32,b:UInt32,c:UInt32,d:UInt32) -> UInt32 {

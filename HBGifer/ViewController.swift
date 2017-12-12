@@ -112,7 +112,7 @@ class GifCell: UITableViewCell {
     
     public var params = (gif:String(),type:String(),operat:String()) {
         didSet{
-            if let data = loadFile(fileName: params.gif) {
+            if let data = HBImageManger.instance.loadFile(fileName: params.gif) {
                 let animatedImage = FLAnimatedImage.init(animatedGIFData: data)
                 gifImageView.animatedImage = animatedImage
                 /** 通过kvc设置loopCountdown属性,可以控制gif的最大循环次数
@@ -138,8 +138,8 @@ class GifCell: UITableViewCell {
     }
     
     @objc func getMixImage() -> () {
-        //self.gifImageView.image = HBImageManger.instance.getMixImage()
         showFramesHandler?(tag)
+        //self.gifImageView.image = HBImageManger.instance.addImage()
     }
 }
 

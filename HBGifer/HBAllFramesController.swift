@@ -34,7 +34,7 @@ class HBAllFramesController: UIViewController ,UITableViewDelegate ,UITableViewD
     }
     
     func analysisImageSource() -> () {
-        if let data = loadFile(fileName: gifName) {
+        if let data = HBImageManger.instance.loadFile(fileName: gifName) {
             //CGImageSourceCreateWithURL(<#T##url: CFURL##CFURL#>, <#T##options: CFDictionary?##CFDictionary?#>)
             if let imageSource = CGImageSourceCreateWithData(data as CFData, nil) {
                 let framesCount = CGImageSourceGetCount(imageSource)
@@ -43,7 +43,6 @@ class HBAllFramesController: UIViewController ,UITableViewDelegate ,UITableViewD
                     if let currentFrame = CGImageSourceCreateImageAtIndex(imageSource, i, nil) {
                         frames.append(currentFrame)
                     }
-                    
                     //CGImageSourceCopyProperties(imageSource, nil)
                     if let property = CGImageSourceCopyPropertiesAtIndex(imageSource, i, nil) as? [String:Any] {
                         properties.append(property)
@@ -66,7 +65,7 @@ extension HBAllFramesController {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? GifCell
-        if cell==nil {
+        if cell == nil {
             cell = GifCell.init(style: .default, reuseIdentifier: "cell")
         }
         cell?.tag = indexPath.row
