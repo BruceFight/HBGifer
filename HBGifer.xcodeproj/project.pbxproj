@@ -16,7 +16,6 @@
 		2A3E30C11FC3D38A00DFB202 /* HBGiferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E30C01FC3D38A00DFB202 /* HBGiferTests.swift */; };
 		2A3E30CC1FC3D38A00DFB202 /* HBGiferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E30CB1FC3D38A00DFB202 /* HBGiferUITests.swift */; };
 		2A3E30DF1FC3D76E00DFB202 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3E30E01FC3D76E00DFB202 /* FLAnimatedImage.framework */; };
-		2A3E30FB1FC4022A00DFB202 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E30B71FC3D38A00DFB202 /* Info.plist */; };
 		2A3E30FC1FC4023000DFB202 /* appear_sleep@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E30E21FC3D88B00DFB202 /* appear_sleep@3x.gif */; };
 		2A3E30FF1FC4023000DFB202 /* sleep@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E30ED1FC3D88B00DFB202 /* sleep@3x.gif */; };
 		2A3E31001FC4023000DFB202 /* sleep_noask@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E30EE1FC3D88B00DFB202 /* sleep_noask@3x.gif */; };
@@ -301,7 +300,6 @@
 				2A3E30FC1FC4023000DFB202 /* appear_sleep@3x.gif in Resources */,
 				2A3E30FF1FC4023000DFB202 /* sleep@3x.gif in Resources */,
 				2A3E31001FC4023000DFB202 /* sleep_noask@3x.gif in Resources */,
-				2A3E30FB1FC4022A00DFB202 /* Info.plist in Resources */,
 				2A3E30B61FC3D38A00DFB202 /* LaunchScreen.storyboard in Resources */,
 				2A3E30B31FC3D38A00DFB202 /* Assets.xcassets in Resources */,
 				2A3E30B11FC3D38A00DFB202 /* Main.storyboard in Resources */,
@@ -491,12 +489,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -542,10 +541,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -665,7 +665,7 @@
 				2A3E30CF1FC3D38A00DFB202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2A3E30D01FC3D38A00DFB202 /* Build configuration list for PBXNativeTarget "HBGifer" */ = {
 			isa = XCConfigurationList;
@@ -674,7 +674,7 @@
 				2A3E30D21FC3D38A00DFB202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2A3E30D31FC3D38A00DFB202 /* Build configuration list for PBXNativeTarget "HBGiferTests" */ = {
 			isa = XCConfigurationList;
@@ -683,7 +683,7 @@
 				2A3E30D51FC3D38A00DFB202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2A3E30D61FC3D38A00DFB202 /* Build configuration list for PBXNativeTarget "HBGiferUITests" */ = {
 			isa = XCConfigurationList;
@@ -692,7 +692,7 @@
 				2A3E30D81FC3D38A00DFB202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

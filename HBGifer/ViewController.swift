@@ -27,6 +27,11 @@ class ViewController: UIViewController ,UITableViewDelegate ,UITableViewDataSour
         tableview.separatorStyle = .none
         view.addSubview(tableview)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableview.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
